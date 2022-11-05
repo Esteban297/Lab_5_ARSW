@@ -1,0 +1,10 @@
+* ¿Qué condiciones de carrera se podrían presentar?
+    1. Cuando se realiza un POST y al mismo tiempo se este realizando un GET ya que puede ocurrir que no exista información
+       se muestre la información del Blueprint que se añadió con el POST.
+
+    2. Al realizar un PUT y al mismo tiempo un GET en donde la consulta sea incorrecta ya que puede no mostrar las modificaciones
+       realizadas.
+
+* ¿Cuales son las respectivas regiones críticas?
+    Los métodos POST, GET y PUT que accedan al recurso de blueprintsServices, debido a que esta clase es la responsable
+    de atender las solicitudes que se realicen.
